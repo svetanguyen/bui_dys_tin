@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: './fonts/FontsFree-Net-NeutralFace';
+  src: url('./fonts/FontsFree-Net-NeutralFace.eot');
+  src: url('./fonts/FontsFree-Net-NeutralFace.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/FontsFree-Net-NeutralFace.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: './fonts/NeutralFaceRegular';
+  src: url('./fonts/NeutralFaceRegular.svg#NeutralFaceRegular') format('svg'),
+       url('./fonts/NeutralFaceRegular.ttf') format('truetype'),
+       url('./fonts/NeutralFaceRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
