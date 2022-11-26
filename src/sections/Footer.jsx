@@ -67,7 +67,7 @@ export const Footer = () => {
               <input className="hidden" type="text" value={email} readOnly />
               {email}
             </a>
-            <button onClick={handleCopyClick}>
+            <button aria-label="Copy" onClick={handleCopyClick}>
               <svg
                 className="inline-block"
                 width="24"
@@ -85,6 +85,7 @@ export const Footer = () => {
           </p>
           <button
             onClick={onDownloadButtonClick}
+            aria-label="download"
             className={`flex items-center transition-all duration-1000 delay-300 ${animationClass}`}
           >
             <svg
