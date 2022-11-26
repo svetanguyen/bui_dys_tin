@@ -17,8 +17,8 @@ export const Work = ({
         }
     }, [inView])
   return (
-    <div ref={inViewRef} className={`lg:flex py-7 lg:py-[65px] items-center`}>
-      <div className={`lg:w-1/2 mb-8 lg:mb-0 delay-500 transition-all duration-1000 ${animationClass}`}>
+    <div className={`lg:flex py-7 lg:py-[65px] items-center`}>
+      <div ref={inViewRef} className={`lg:w-1/2 mb-8 lg:mb-0 delay-500 transition-all duration-1000 ${animationClass}`}>
         <img
           className="max-w-full object-cover"
           src={`images/${img}`}

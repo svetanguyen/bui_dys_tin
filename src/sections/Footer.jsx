@@ -52,10 +52,10 @@ export const Footer = () => {
   return (
     <div className="py-6 lg:py-[72px] font-mono">
       <div
-        ref={inViewRef}
+        
         className={`lg:flex items-center justify-between transition-all duration-1000 bg-black-100 py-8 px-6 lg:pl-[104px] lg:pr-[72px]`}
       >
-        <div className="flex-grow">
+        <div ref={inViewRef} className="flex-grow">
           <p
             className={`text-beige flex items-center text-lg lg:text-2xl flex-wrap transition-all duration-1000 mb-6 lg:mb-10 ${animationClass}`}
           >
