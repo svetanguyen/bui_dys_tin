@@ -17,22 +17,22 @@ export const Work = ({
         }
     }, [inView])
   return (
-    <div ref={inViewRef} className={`md:flex py-7 md:py-[65px] items-center transition-all duration-1000 ${animationClass}`}>
-      <div className="md:w-1/2 mb-8 md:mb-0">
+    <div ref={inViewRef} className={`lg:flex py-7 lg:py-[65px] items-center`}>
+      <div className={`lg:w-1/2 mb-8 lg:mb-0 delay-500 transition-all duration-1000 ${animationClass}`}>
         <img
           className="max-w-full object-cover"
           src={`images/${img}`}
           alt={title}
         />
       </div>
-      <div className="md:px-14 md:w-1/2">
-        <h3 className="font-light uppercase text-4.5xl">{title}</h3>
-        <h4 className="font-mono mb-4 md:mb-6 text-black-100/60">{type}</h4>
-        <p className="font-mono mb-4 md:mb-6">{description}</p>
-        <div className="flex gap-2 md:gap-6">
+      <div className="lg:px-14 lg:w-1/2">
+        <h3 className={`font-light leading-snug uppercase text-4.5xl delay-1000 transition-all duration-1000 ${animationClass}`}>{title}</h3>
+        <h4 className={`font-mono leading-tight mb-4 lg:mb-6 text-black-100/60 delay-[1500ms] transition-all duration-1000 ${animationClass}`}>{type}</h4>
+        <p className={`font-mono mb-4 lg:max-w-[300px] leading-snug lg:mb-6 delay-[2000ms] transition-all duration-1000 ${animationClass}`}>{description}</p>
+        <div className={`flex gap-2 lg:gap-6 delay-[2500ms] transition-all duration-1000 ${animationClass}`}>
           {presentation && (
             <a
-              className="border-black-100 text-base md:text-xl border rounded-[50px] flex py-4 justify-center items-center font-mono w-1/2 md:w-[212px]"
+              className="border-black-100 text-base lg:text-xl border rounded-[50px] flex py-4 justify-center items-center font-mono w-1/2 lg:min-w-[200px] lg:max-w-1/2 transition-all duration-300 hover:bg-black-100 hover:text-beige"
               href={presentation}
               target="_blank"
               rel="noreferrer"
@@ -55,7 +55,7 @@ export const Work = ({
           )}
           {design && (
             <a
-              className="border-black-100 text-base md:text-xl border rounded-[50px] flex py-4 justify-center items-center font-mono w-1/2 md:w-[212px]"
+              className="border-black-100 text-base lg:text-xl border rounded-[50px] flex py-4 justify-center items-center font-mono w-1/2 lg:min-w-[200px] lg:max-w-1/2 transition-all duration-300 hover:bg-black-100 hover:text-beige"
               href={design}
               target="_blank"
               rel="noreferrer"

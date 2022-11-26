@@ -50,14 +50,14 @@ export const Footer = () => {
   };
 
   return (
-    <div className="py-6 md:py-[72px]">
+    <div className="py-6 lg:py-[72px] font-mono">
       <div
         ref={inViewRef}
-        className={`md:flex items-center justify-between transition-all duration-1000 bg-black-100 py-8 px-6`}
+        className={`lg:flex items-center justify-between transition-all duration-1000 bg-black-100 py-8 px-6 lg:pl-[104px] lg:pr-[72px]`}
       >
-        <div>
+        <div className="flex-grow">
           <p
-            className={`text-beige flex items-center text-lg md:text-2xl flex-wrap transition-all duration-1000 mb-6 md:mb-10 ${animationClass}`}
+            className={`text-beige flex items-center text-lg lg:text-2xl flex-wrap transition-all duration-1000 mb-6 lg:mb-10 ${animationClass}`}
           >
             Contact:
             <a
@@ -101,17 +101,17 @@ export const Footer = () => {
               />
             </svg>
             <div className="text-left">
-              <p className="text-lg md:text-2xl underline text-beige">
+              <p className="text-lg lg:text-2xl underline text-beige underline-offset-4">
                 Resume-Bui-Dys-Tin.PDF
               </p>
-              <p className="text-beige/60 text-base md:text-xl">324 kb</p>
+              <p className="text-beige/60 text-base lg:text-xl">324 kb</p>
             </div>
           </button>
         </div>
         <div
-          className={`transition-all duration-1000 delay-700 ${animationClass}`}
+          className={`max-w-[40%] flex-shrink-0 transition-all duration-1000 delay-700 ${animationClass}`}
         >
-          <img src="/images/plane.png" alt="paper plane" />
+          <img className="max-w-full object-contain" src="/images/plane.png" alt="paper plane" />
         </div>
       </div>
     </div>

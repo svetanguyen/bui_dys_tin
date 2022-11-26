@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: './fonts/FontsFree-Net-NeutralFace';
-  src: url('./fonts/FontsFree-Net-NeutralFace.eot');
-  src: url('./fonts/FontsFree-Net-NeutralFace.eot?#iefix') format('embedded-opentype'),
-       url('./fonts/FontsFree-Net-NeutralFace.woff2') format('woff2');
+  font-family: 'NeutralFaceRegular';
+  src: url('./fonts/NeutralFaceRegular.eot');
+  src: url('./fonts/NeutralFaceRegular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/NeutralFaceRegular.svg#NeutralFaceRegular') format('svg'),
+       url('./fonts/NeutralFaceRegular.ttf') format('truetype'),
+       url('./fonts/NeutralFaceRegular.woff') format('woff'),
+       url('./fonts/NeutralFaceRegular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: './fonts/NeutralFaceRegular';
-  src: url('./fonts/NeutralFaceRegular.svg#NeutralFaceRegular') format('svg'),
-       url('./fonts/NeutralFaceRegular.ttf') format('truetype'),
-       url('./fonts/NeutralFaceRegular.woff') format('woff');
+  font-family: 'NeutralFaceBold';
+  src: url('./fonts/NeutralFaceBold.eot');
+  src: url('./fonts/NeutralFaceBold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/NeutralFaceBold.svg#NeutralFaceBold') format('svg'),
+       url('./fonts/NeutralFaceBold.ttf') format('truetype'),
+       url('./fonts/NeutralFaceBold.woff') format('woff'),
+       url('./fonts/NeutralFaceBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

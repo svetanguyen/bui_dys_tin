@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['NeutralFaceRegular', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        'mono': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+        'mono': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'serif': ['NeutralFaceBold', 'ui-sans-serif', 'system-ui', 'sans-serif']
       },
       colors: {
         'beige': '#FCF6F2',
@@ -17,7 +18,8 @@ module.exports = {
         '7.5xl': '80px',
       },
       lineHeight: {
-        'snug': '1.3'
+        'snug': '1.3',
+        'tight': '1.2'
       }
     },
   },
